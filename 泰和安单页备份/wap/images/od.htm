@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-
+
+scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>WFPHP在线订单系统2014官方正式版 - （WAP版）样式02</title>
+<script type="text/javascript" src="wfdq.js" charset="gb2312"></script>
+<link href="wfstyle.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+    #wforder{width:100%;background:#EBF7FF;}
+    .wftitle,.wfsubbox input{background:#09F;}
+</style>
+</head>
+<body style="" marginwidth="0" marginheight="0">
+<div id="wforder">
+    <div class="wfwarp">
+    
+        <form id="wfform" name="wfform" action="../zzfhworder/order.asp" method="post" onSubmit="return postcheck()" target="_blank"> 
+<script src="../zzfhworder/images/notorder.js"></script>
+					<script> var province = remote_ip_info.province; var city = remote_ip_info.city; document.getElementById("ip").value=province+city; </script>
+
+        <div class="wftitle" style="background:#68625B">在线快速订购</div> 
+        <div class="wfbdbox">
+            <label class="wfbdxxcp"><em>*</em>选择产品</label>
+            <div class="wfdxboxcp red">
+            <input type="radio" name="wfproduct" id="a1" value="初瘦餐 适用于期望瘦6-11斤群体 498元|498（2盒赠1盒）" onclick="pricea()" class="dxk"><label for="a1">初瘦餐 适用于期望瘦6-11斤群体 498元（2盒赠1盒）</label><br>
+                            <input type="radio" checked="checked" name="wfproduct" id="a2" value="显瘦餐 适用于期望瘦13-23斤群体 898元|898（4盒赠2盒）" onclick="pricea()" class="dxk"><label for="a2">显瘦餐 适用于期望瘦13-23斤群体 898元（4盒赠2盒）<img src="hot.gif"></label><br>
+                            <input type="radio" name="wfproduct" id="a3" value="易瘦体质装 适用于期望瘦24-30斤群体 1298元|1298（6盒赠3盒）" onclick="pricea()" class="dxk"><label for="a3">易瘦体质装 适用于期望瘦24-30斤群体 1298元（6盒赠3盒）</label><br>
+                            <input type="radio" name="wfproduct" id="a3" value="终极塑身装 适用于期望瘦35-40斤群体 1698元|1698（8盒赠4盒）" onclick="pricea()" class="dxk"><label for="a3">终极塑身装 适用于期望瘦35-40斤群体 1698元（8盒赠4盒）</label><br>
+       </div>
+        </div>
+        <div class="wfbdbox">
+            <label class="wfbdxx"><em>*</em>您的姓名</label>
+            <div class="wftextbox">
+                <input type="text" name="wfname">
+            </div>
+        </div>
+        <div class="wfbdbox">
+            <label class="wfbdxx"><em>*</em>手机号码</label>
+            <div class="wftextbox">
+                <input type="text" name="wfmob">
+            </div>
+        </div>
+        <div class="wfbdbox">
+            <label class="wfbdxx"><em>*</em>所在地区</label>
+            <div class="wfxlbox">
+                <select name="wfprovince" class="wfdqxl"><option value="">选省份</option><option value="北京市">北京市</option><option value="天津市">天津市</option><option value="河北省">河北省</option><option value="山西省">山西省</option><option value="内蒙古自治区">内蒙古自治区</option><option value="辽宁省">辽宁省</option><option value="吉林省">吉林省</option><option value="黑龙江省">黑龙江省</option><option value="上海市">上海市</option><option value="江苏省">江苏省</option><option value="浙江省">浙江省</option><option value="安徽省">安徽省</option><option value="福建省">福建省</option><option value="江西省">江西省</option><option value="山东省">山东省</option><option value="河南省">河南省</option><option value="湖北省">湖北省</option><option value="湖南省">湖南省</option><option value="广东省">广东省</option><option value="广西壮族自治区">广西壮族自治区</option><option value="海南省">海南省</option><option value="重庆市">重庆市</option><option value="四川省">四川省</option><option value="贵州省">贵州省</option><option value="云南省">云南省</option><option value="西藏自治区">西藏自治区</option><option value="陕西省">陕西省</option><option value="甘肃省">甘肃省</option><option value="青海省">青海省</option><option value="宁夏回族自治区">宁夏回族自治区</option><option value="新疆维吾尔自治区">新疆维吾尔自治区</option><option value="香港特别行政区">香港特别行政区</option><option value="澳门特别行政区">澳门特别行政区</option><option value="台湾省">台湾省</option></select><select name="wfcity" class="wfdqxl"><option value="">选城市</option></select><select name="wfarea" class="wfdqxl"><option value="">选地区</option></select>
+            </div>
+        </div>
+        <div class="wfbdbox">
+            <label class="wfbdxx"><em>*</em>详细地址</label>
+            <div class="wftextbox">
+                <input type="text" name="wfaddress">
+            </div>
+        </div>
+        <div class="wfbdbox">
+            <label class="wfbdxx"><em>*</em>付款方式</label>
+            <div class="wfdxbox">
+                <input type="radio" checked="checked" name="wfpay" id="b1" value="货
+
+到" onClick="opay()"><label for="b1"><img src="fka.gif"></label>
+<!--                <input type="radio" name="wfpay" id="b2" value="银行" onclick="opay
+
+()"><label for="b2"><img src="./od_files/fkb.gif"></label>-->
+            </div>
+        </div>
+        <div class="wfbdbox">
+            <label class="wfbdxx">留言</label>
+            <div class="wftext2box">
+                <textarea name="wfguest"></textarea>
+            </div>
+        </div>
+        <div class="wfsubbox">
+            <input type="submit" name="wfsubmit" value="立即提交订单">
+        </div>
+        </form>
+        <div style="clear:both;"></div>
+    </div>
+</div>
+<div id="wffahuo"></div>
+<script type="text/javascript" src="wffh.js"></script>
+<script type="text/javascript" src="wfbd.js"></script>
+
+</body></html>
